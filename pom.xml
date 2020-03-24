@@ -156,6 +156,21 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- JSON(jackson) -->
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+	 		<version>2.9.9</version>
+		</dependency>
+		
+		<!-- file upload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.4</version>
+		</dependency>
+		
 		<!-- Tiles -->
 		<dependency>
 		    <groupId>org.apache.tiles</groupId>
@@ -182,6 +197,14 @@
 		    <artifactId>tiles-template</artifactId>
 		    <version>${org.apache.tiles-version}</version>
 		</dependency>
+		
+		<!-- 썸네일을 생성하는 코드로 imageScalr 라이브러리 활용 -->
+		<dependency>
+			<groupId>org.imgscalr</groupId>
+		    <artifactId>imgscalr-lib</artifactId>
+		    <version>4.2</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<plugins>

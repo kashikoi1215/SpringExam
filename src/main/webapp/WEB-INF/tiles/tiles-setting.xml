@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
 "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
 <tiles-definitions>
 	<definition name="intro" template="/WEB-INF/views/template/client/mainLayout.jsp">
 		<put-attribute name="title" value="OOO 사이트"/>
@@ -20,4 +21,10 @@
 	<definition name="replies/*" extends="content">
 		<put-attribute name="body" value="/WEB-INF/views/board/reply.jsp"/>
 	</definition>
+	
+	<definition name="gallery/*" extends="content">
+		<put-attribute name="title" value="갤러리 게시판" />
+		<put-attribute name="body" value="/WEB-INF/views/gallery/{1}.jsp" />
+	</definition>
+
 </tiles-definitions>
